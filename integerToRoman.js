@@ -25,4 +25,9 @@ for (let key in romanNum) {
 return roman;
 };
 
-//
+// Leetcode challenge found here: https://leetcode.com/problems/integer-to-roman/
+
+// 1. Make object of key value pairs representing roman numerals (key) and their value (value)
+// 2. Create empty string for the output of the function
+// 3. Iterate through the object and while the parameter(num) is bigger than the value of each key, add that key (a roman numeral) to the roman string.
+// 4. Then take away the value of the key (roman numeral) from the parameter(num) and loop through again until num = 0.
